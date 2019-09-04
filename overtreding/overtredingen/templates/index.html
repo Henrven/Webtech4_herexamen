@@ -1,12 +1,11 @@
-<h1> Movies </h1>
+<h1> Overtredingen: </h1>
 <hr>
 <ul> 
-{% for overtreding in overtrovertredingenlijst %}
+{% for overtreding in overtredingenlijst %}
 <li><a > street: {{overtreding.street}} <br>
 speed_limit: {{overtreding.speed_limit}} <br>
 infractions_speed: {{overtreding.infractions_speed}} </a></li> <br>
 {% endfor %}
 </ul>
 
-<a href="add/"> add >> </a>
 
