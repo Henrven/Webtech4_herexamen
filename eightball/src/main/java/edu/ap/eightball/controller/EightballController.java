@@ -45,11 +45,11 @@ public class EightballController {
         {
             Random r = new Random();
             int randomnumber = r.nextInt(answers.length);
-            numbers.add(randomnumber);
             while (numbers.contains(randomnumber))
             {
                 randomnumber = r.nextInt(answers.length);
             }
+            numbers.add(randomnumber);
             answer = answers[randomnumber];
             service.setKey("vragen:" + question + ":" + answer, "");
             model.addAttribute("answer", answer);
