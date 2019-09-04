@@ -1,19 +1,7 @@
 package edu.ap.eightball.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-
-import org.springframework.data.annotation.Id;
-
-/**
- * Eightball
- */
-@Entity
 public class Eightball {
     
-    @Id
-    @GeneratedValue
-    private Long id;
     
     public String vraag;
     public String Antwoord;
